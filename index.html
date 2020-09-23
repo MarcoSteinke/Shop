@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Training</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.bestofcode.net/HTTPS.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/Shop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="src/Services/RandomImageQuery.js"></script>
+    <script src="src/Services/RandomItemGenerator.js"></script>
+    <script src="src/Objects/Item.js"></script>
+    <script src="src/Services/Database.js"></script>
+    <script src="src/Controllers/DatabaseController.js"></script>
+    <script src="src/ShopApplication.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="../../header.html"></div>
+    <div class="nav-container">
+      <a class="nav-item label">
+        My Online Shop
+      </a>
+      <a class="nav-item">
+        Men
+      </a>
+      <a class="nav-item">
+        Women
+      </a>
+      <a class="nav-item">
+        <span style="color: red;">%</span> Sale
+      </a>
+      <div class="nav-item">
+        <input class="search" type="text">
+        <button class="search">search</button>
+      </div>
+      
+      
+    </div>
+    
+    <div class="container">
+      <div class="sidebar">
+        <div>Filter your results:</div>
+        <div>Size:</div>
+        <div id="size-monitor">Select Size</div>
+        <input id="grayscale" name="size" type="range" min="32" onchange="" max="42" value=""/>
+        <div>Color:</div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: red;"><input class="color-selector" type="checkbox" name="red" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: blue;"><input class="color-selector" type="checkbox" name="blue" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: green;"><input class="color-selector" type="checkbox" name="green" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: yellow;"><input class="color-selector" type="checkbox" name="yellow" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: purple;"><input class="color-selector" type="checkbox" name="purple" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: white;"><input class="color-selector" type="checkbox" name="white" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: black;"><input class="color-selector" type="checkbox" name="black" id=""></div>
+        <div class="color-icon" style="margin: auto; width: 8px; height: 8px; background: gray;"><input class="color-selector" type="checkbox" name="gray" id=""></div>
+        
+        <!-- TODO: color selector-->
+        <div>Type:</div>
+        <label>
+          <select name="type" size="6">
+            <optgroup label="Pants">
+              <option label="Jeans">Jeans</option>
+              <option label="Shorts">Shorts</option>
+              <option label="Jogging pants">Jogging pants</option>
+            </optgroup>
+            <optgroup label="Street Wear">
+              <option label="Hoodie">Hoodie</option>
+              <option label="Shirt">Shirt</option>
+              <option label="Poloshirt">Poloshirt</option>
+            </optgroup>
+            <optgroup label="Underwear">
+              <option label="Socks">Socks</option>
+              <option label="Underwear">Underwear</option>
+            </optgroup>
+          </select>
+        </label>
+        <br>
+        
+        <button class="filter">filter</button>
+      </div>
+      <div class="scrollable">
+      <ul class="shop-item-list">
+        <li>
+            <div class="shop-item"></div>
+            <div class="shop-item-name">Hoodie</div>
+            <div class="shop-item-colors"></div>
+        </li>
+        <li>
+          <div class="shop-item"></div>
+          <div class="shop-item-name">Hoodie</div>
+          <div class="shop-item-colors"></div>
+      </li>
+      <li>
+        <div class="shop-item"></div>
+        <div class="shop-item-name">Hoodie</div>
+        <div class="shop-item-colors"></div>
+    </li>
+    <li>
+      <div class="shop-item"></div>
+      <div class="shop-item-name">Hoodie</div>
+      <div class="shop-item-colors"></div>
+  </li>
+  <li>
+    <div class="shop-item"></div>
+    <div class="shop-item-name">Hoodie</div>
+    <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+<li>
+  <div class="shop-item"></div>
+  <div class="shop-item-name">Hoodie</div>
+  <div class="shop-item-colors"></div>
+</li>
+
+
+      </ul>
+      </div>
+        
+    </div>
+</body>
+<script>
+  includeHTML();
+</script>
+</html>

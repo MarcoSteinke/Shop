@@ -1,0 +1,271 @@
+                        div.sidebar {
+                            margin-top: 20px;
+                            padding-top: 20px;
+                            position: fixed;
+                            background: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            height: 80vh;
+                            width: 35vh;
+                            border: 1px solid gray;
+                            left: 0px;
+                            overflow: hidden;
+                            overflow-y: scroll;
+                            z-index: 1;
+                            box-shadow: 0px 3px 4px 3px rgb(40, 40, 40, 0.7);
+                            text-align: center;
+                            margin-left: 5%;
+                        }
+                        
+                        .color-selector {
+                            margin-left: 12px;
+                            margin-top: -5px;
+                        }
+                        
+                        div.color-icon {
+                            margin: 5px;
+                        }
+                        
+                        div.scrollable {}
+                        
+                        .sidebar>div {
+                            padding: 10px;
+                        }
+                        
+                        .sidebar>* {
+                            color: white;
+                            text-align: center;
+                        }
+                        
+                        a.nav-item {
+                            display: inline;
+                            color: white !important;
+                            padding-left: 3px;
+                            padding-right: 3px;
+                            padding-bottom: 0px;
+                            font-size: 1.4rem;
+                            border-left: 1px solid black;
+                        }
+                        
+                        .search {
+                            float: right;
+                            margin-right: 10px;
+                            height: 4vh;
+                        }
+                        
+                        button.search:hover {
+                            transform: scale(1.1);
+                        }
+                        
+                        input.search:hover {
+                            border: 2px solid rgb(52, 157, 255);
+                            border-radius: 10px;
+                        }
+                        
+                        div.nav-item {
+                            display: inline;
+                            color: white;
+                            padding-left: 3px;
+                            padding-right: 3px;
+                            padding-bottom: 0px;
+                            font-size: 1.4rem;
+                            border-left: 1px solid black;
+                        }
+                        
+                        a.nav-item.label {
+                            border: none;
+                        }
+                        
+                        a.nav-item.label:hover {
+                            color: darkred !important;
+                            background: transparent;
+                            cursor: default;
+                        }
+                        
+                        a.nav-item:hover {
+                            transform: scale(1.1);
+                            background: rgb(120, 120, 180);
+                            transition-duration: 0.4s;
+                            cursor: default;
+                        }
+                        
+                        body {
+                            background: gray;
+                            background: url(http://getwallpapers.com/wallpaper/full/1/5/f/610492.jpg);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            padding-top: 2%;
+                            padding-left: 5%;
+                            padding-right: 5%;
+                        }
+                        
+                        .nav-container {
+                            display: block;
+                            box-shadow: 0px 3px 4px 3px rgb(40, 40, 40, 0.7);
+                            border: 1px solid gray;
+                            background: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            margin-bottom: 10px;
+                            padding: 10px;
+                        }
+                        
+                        div.container {
+                            /*padding-left: 10%;
+    padding-right: 10%;*/
+                        }
+                        
+                        div.shop-item {
+                            margin: 20px;
+                            width: 240px;
+                            height: 240px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            border: 0.2px solid gray;
+                            box-shadow: 0px 5px 10px 10px rgb(40, 40, 40, 0.7);
+                        }
+                        
+                        div.shop-item:hover {
+                            box-shadow: none;
+                            transform: scale(2);
+                            transition-duration: 0.3s;
+                        }
+                        /* width */
+                        
+                         ::-webkit-scrollbar {
+                            width: 10px;
+                        }
+                        /* Track */
+                        
+                         ::-webkit-scrollbar-track {
+                            background: #f1f1f1;
+                        }
+                        /* Handle */
+                        
+                         ::-webkit-scrollbar-thumb {
+                            background: rgb(52, 157, 255);
+                        }
+                        /* Handle on hover */
+                        
+                         ::-webkit-scrollbar-thumb:hover {
+                            background: lightblue;
+                        }
+                        
+                        div.shop-item-name {
+                            background: white;
+                            border-radius: 10px;
+                            margin: 5px;
+                        }
+                        
+                        button.search {
+                            background: rgb(52, 157, 255);
+                            color: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            font-size: 1rem;
+                            border: 1px solid rgb(40, 40, 59);
+                            border-radius: 8px 0px 8px 0px;
+                        }
+                        
+                        button.filter {
+                            background: rgb(52, 157, 255);
+                            color: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            font-size: 1rem;
+                            border: 1px solid rgb(40, 40, 59);
+                            border-radius: 8px 0px 8px 0px;
+                        }
+                        
+                        button.filter:hover {
+                            transform: scale(1.1);
+                        }
+                        
+                        li {
+                            float: left;
+                        }
+                        
+                        ul {
+                            list-style: none;
+                        }
+                        /*
+                    
+                    @media only screen and (min-width: 920px) {*/
+                        
+                        div.scrollable {
+                            padding-left: 20px;
+                            text-align: center;
+                            background: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            display: flex;
+                            box-shadow: 0px 3px 4px 3px rgb(40, 40, 40, 0.7);
+                            margin: 20px;
+                            margin-left: 30vh;
+                            border: 1px solid gray !important;
+                            overflow-y: scroll;
+                            overflow-x: hidden;
+                            height: 80vh;
+                            width: 146vh;
+                            width: 87%;
+                            padding: 20px;
+                            overflow-x: hidden;
+                        }
+                        /*
+                    }
+                    
+                    @media only screen and (max-width: 919px) {
+                        div.scrollable {
+                            text-align: center;
+                            background: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            box-shadow: 0px 3px 4px 3px rgb(40, 40, 40, 0.7);
+                            margin: 20px;
+                            margin-left: 35vh;
+                            border: 1px solid gray !important;
+                            overflow-y: scroll;
+                            overflow-x: hidden;
+                            height: 80vh;
+                            width: 75%;
+                            padding: 20px;
+                            overflow-x: hidden;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 829px) {
+                        div.scrollable {
+                            text-align: center;
+                            background: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                            box-shadow: 0px 3px 4px 3px rgb(40, 40, 40, 0.7);
+                            margin: 20px;
+                            margin-left: 40vh;
+                            border: 1px solid gray !important;
+                            overflow-y: scroll;
+                            overflow-x: hidden;
+                            height: 80vh;
+                            width: 65%;
+                            padding: 20px;
+                            overflow-x: hidden;
+                        }
+                        /* Mobile Responsive View */
+                        /*
+                        @media only screen and (max-width: 767px) {
+                            div.scrollable {
+                                text-align: center;
+                                background: radial-gradient(rgb(40, 40, 59), rgb(44, 49, 61));
+                                box-shadow: 0px 3px 4px 3px rgb(40, 40, 40, 0.7);
+                                margin: 20px;
+                                margin-left: 40vh;
+                                border: 1px solid gray !important;
+                                overflow-y: scroll;
+                                overflow-x: hidden;
+                                height: 80vh;
+                                width: 65%;
+                                padding: 20px;
+                                overflow-x: hidden;
+                            }
+                        }*/
+                        
+                        @media only screen and (max-width: 1500px) {
+                            div.scrollable {
+                                left: 200px;
+                            }
+                        }
+                        
+                        div.scrollable {
+                            margin-right: 5% !important;
+                            position: fixed;
+                            margin-left: 5%;
+                            width: auto;
+                            /* min-content for mobile version */
+                            /*width: min-content;*/
+                        }
