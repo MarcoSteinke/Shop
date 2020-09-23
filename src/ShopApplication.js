@@ -23,18 +23,3 @@ class Application {
 }
 
 let shopApplication = new Application();
-let database = shopApplication.databaseController.database;
-let rnd = new RandomItemGenerator(database);
-
-rnd.generateRandomShopItem();
-
-let url = getRandomImage("Sport Model");
-
-/*let rndImageObject = document.createElement("img");
-rndImageObject.setAttribute("url", url);
-
-document.append(rndImageObject);*/
-
-database.insert(new Item("Hoodie", "", 65, ['red', 'green', 'white']));
-
-database.print();
