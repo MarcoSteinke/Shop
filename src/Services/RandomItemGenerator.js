@@ -27,14 +27,6 @@ class RandomItemGenerator {
 
         let jeansTypes = ['ripped', 'skinny', 'highwaist', ''];
 
-        console.log(new Item(
-            this.chooseRandomFromArray(brands) + " " + this.chooseRandomFromArray(types),
-            "",
-            (Math.random() * 50 + Math.random()).toFixed(2),
-            this.chooseRandomFromArray(colors)
-        ));
-        
-
         return new Item(
             this.chooseRandomFromArray(brands) + " " + this.chooseRandomFromArray(types),
             "",
