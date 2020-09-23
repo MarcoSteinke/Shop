@@ -16,7 +16,26 @@
     <link rel="stylesheet" href="styles/Shop.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
+  <script>
+    window.onload = function() {
+      if(window.innerWidth < 1800 || window.innerHeight < 700) {
+        document.getElementsByTagName("body")[0].remove();
+        document.getElementsByTagName("html")[0].style.backgroundColor = "rgb(40, 40, 59)";
+        document.getElementsByTagName("html")[0].style.textAlign = "center";
+        document.getElementsByTagName("html")[0].insertAdjacentHTML("afterbegin", "<h1 style=\"margin: 100px; color: white;\">Your window size has to be greater than 700x1800 at the moment.");
+      };
+    };
 
+    window.onresize = function() {
+      if(window.innerWidth < 1800 || window.innerHeight < 700) {
+        document.getElementsByTagName("body")[0].remove();
+        document.getElementsByTagName("html")[0].style.backgroundColor = "rgb(40, 40, 59)";
+        document.getElementsByTagName("html")[0].style.textAlign = "center";
+        document.getElementsByTagName("html")[0].insertAdjacentHTML("afterbegin", "<h1 style=\"margin: 100px; color: white;\">Your window size has to be greater than 700x1800 at the moment.");
+      }
+    };
+  </script>
+  
   <body>
     <div w3-include-html="../../header.html"></div>
     <div class="nav-container">
