@@ -124,7 +124,6 @@ div.shop-item {
 
 div.shop-item:hover {
   box-shadow: none;
-  transform: scale(2);
   transition-duration: 0.3s;
 }
 /* width */
