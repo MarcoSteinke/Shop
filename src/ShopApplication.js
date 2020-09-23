@@ -12,7 +12,9 @@ class Application {
         this.version = "1.1";
         this.name = "Shopily by Marco Steinke";
         this.loadApplication();
-        this.databaseController = new DatabaseController(new Database());
+        this.database = new Database();
+        this.databaseController = new DatabaseController(this.database);
+        this.shopItemRenderer = new ShopItemRenderer(this.database);
 
     }
 

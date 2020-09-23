@@ -37,6 +37,6 @@ class RandomItemGenerator {
 
     // Method to return a random element from any given array
     chooseRandomFromArray(array = []) {
-        return array[Math.round(Math.random() * array.length)];
+        return array[Math.floor(Math.random() * array.length)];
     }
 }
