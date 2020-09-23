@@ -15,12 +15,6 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/Shop.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="src/Services/RandomImageQuery.js"></script>
-    <script src="src/Services/RandomItemGenerator.js"></script>
-    <script src="src/Objects/Item.js"></script>
-    <script src="src/Services/Database.js"></script>
-    <script src="src/Controllers/DatabaseController.js"></script>
-    <script src="src/ShopApplication.js"></script>
   </head>
 
   <body>
@@ -125,14 +119,16 @@
         <button class="filter">filter</button>
       </div>
       <div class="scrollable">
-        <ul class="shop-item-list">
-          <li>
-            <div class="shop-item"></div>
-            <div class="shop-item-name">Hoodie</div>
-            <div class="shop-item-colors"></div>
-          </li>
+        <ul class="shop-item-list" id="items">
         </ul>
       </div>
     </div>
   </body>
+  <script src="src/Services/RandomImageQuery.js"></script>
+    <script src="src/Services/RandomItemGenerator.js"></script>
+    <script src="src/Objects/Item.js"></script>
+    <script src="src/Services/Database.js"></script>
+    <script src="src/UserInterface/ShopItemRenderer.js"></script>
+    <script src="src/Controllers/DatabaseController.js"></script>
+    <script src="src/ShopApplication.js"></script>
 </html>
