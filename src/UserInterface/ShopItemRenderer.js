@@ -64,10 +64,15 @@ class ShopItemRenderer {
         document.getElementById("items").insertAdjacentHTML(
             "afterbegin", 
             "<li>\
-            <div class=\"shop-item\"></div>\
+            <div class=\"shop-item\" id=\"" + item.UUID + "\"></div>\
             <div class=\"shop-item-name\">" + item.name + "</div>\
             <div class=\"shop-item-colors\"></div>\
             </li>"
-        )
+        );
+
+        console.log(item);
+
+        getRandomImage(item.UUID, item.name.substring(item.name.indexOf(' '), item.name.length));
+
     }
 }

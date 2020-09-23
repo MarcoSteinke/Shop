@@ -1,4 +1,4 @@
-function getRandomImage(keyword) {
+function getRandomImage(shopItemId, keyword) {
     // Google Search expression:
     //var keyword = "nike hoodie";
 
@@ -18,7 +18,7 @@ function getRandomImage(keyword) {
 
                 image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
 
-                $('.shop-item').css('background-image', "url('" + image_src + "')");
+                $("#" + shopItemId).css('background-image', "url('" + image_src + "')");
 
             });
 
