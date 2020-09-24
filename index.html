@@ -48,93 +48,93 @@
         <button class="search">search</button>
       </div>
     </div>
-    <div class="sidebar">
-      <div>Filter your results:</div>
-      <div>Size:</div>
-      <div id="size-monitor">Select Size</div>
-      <input
-        id="grayscale"
-        name="size"
-        type="range"
-        min="32"
-        onchange=""
-        max="42"
-        value=""
-      />
-      <div>Color:</div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: red"
-      >
-        <input class="color-selector" type="checkbox" name="red" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: blue"
-      >
-        <input class="color-selector" type="checkbox" name="blue" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: green"
-      >
-        <input class="color-selector" type="checkbox" name="green" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: yellow"
-      >
-        <input class="color-selector" type="checkbox" name="yellow" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: purple"
-      >
-        <input class="color-selector" type="checkbox" name="purple" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: white"
-      >
-        <input class="color-selector" type="checkbox" name="white" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: black"
-      >
-        <input class="color-selector" type="checkbox" name="black" id="" />
-      </div>
-      <div
-        class="color-icon"
-        style="margin: auto; width: 8px; height: 8px; background: gray"
-      >
-        <input class="color-selector" type="checkbox" name="gray" id="" />
-      </div>
+<div class="sidebar">
+        <div>Filter your results:</div>
+        <div>Size:</div>
+        <div id="size-monitor">Select Size</div>
+        <input
+          id="grayscale"
+          name="size"
+          type="range"
+          min="32"
+          onchange=""
+          max="42"
+          value=""
+        />
+        <div>Color:</div>
+        <div
+          class="color-icon" value="red" onclick="setColor('red')"
+          style="margin: auto; width: 8px; height: 8px; background: red"
+        >
+          <input class="color-selector" type="checkbox" name="red" id="" />
+        </div>
+        <div
+          class="color-icon" value="blue" onclick="setColor('blue')"
+          style="margin: auto; width: 8px; height: 8px; background: blue"
+        >
+          <input class="color-selector" type="checkbox" name="blue" id="" />
+        </div>
+        <div
+          class="color-icon" value="green" onclick="setColor('green')"
+          style="margin: auto; width: 8px; height: 8px; background: green"
+        >
+          <input class="color-selector" type="checkbox" name="green" id="" />
+        </div>
+        <div
+          class="color-icon" value="yellow" onclick="setColor('yellow')"
+          style="margin: auto; width: 8px; height: 8px; background: yellow"
+        >
+          <input class="color-selector" type="checkbox" name="yellow" id="" />
+        </div>
+        <div
+          class="color-icon" value="purple" onclick="setColor('purple')"
+          style="margin: auto; width: 8px; height: 8px; background: purple"
+        >
+          <input class="color-selector" type="checkbox" name="purple" id="" />
+        </div>
+        <div
+          class="color-icon" value="white" onclick="setColor('white')"
+          style="margin: auto; width: 8px; height: 8px; background: white"
+        >
+          <input class="color-selector" type="checkbox" name="white" id="" />
+        </div>
+        <div
+          class="color-icon" value="black" onclick="setColor('black')"
+          style="margin: auto; width: 8px; height: 8px; background: black"
+        >
+          <input class="color-selector" type="checkbox" name="black" id="" />
+        </div>
+        <div
+          class="color-icon" value="gray" onclick="setColor('gray')"
+          style="margin: auto; width: 8px; height: 8px; background: gray"
+        >
+          <input class="color-selector" type="checkbox" name="gray" id="" />
+        </div>
 
-      <!-- TODO: color selector-->
-      <div>Type:</div>
-      <label>
-        <select name="type" size="6">
-          <optgroup label="Pants">
-            <option label="Jeans">Jeans</option>
-            <option label="Shorts">Shorts</option>
-            <option label="Jogging pants">Jogging pants</option>
-          </optgroup>
-          <optgroup label="Street Wear">
-            <option label="Hoodie">Hoodie</option>
-            <option label="Shirt">Shirt</option>
-            <option label="Poloshirt">Poloshirt</option>
-          </optgroup>
-          <optgroup label="Underwear">
-            <option label="Socks">Socks</option>
-            <option label="Underwear">Underwear</option>
-          </optgroup>
-        </select>
-      </label>
-      <br />
+        <!-- TODO: color selector-->
+        <div>Type:</div>
+        <label>
+          <select name="type" size="6">
+            <optgroup label="Pants">
+              <option label="Jeans">Jeans</option>
+              <option label="Shorts">Shorts</option>
+              <option label="Jogging pants">Jogging pants</option>
+            </optgroup>
+            <optgroup label="Street Wear">
+              <option label="Hoodie">Hoodie</option>
+              <option label="Shirt">Shirt</option>
+              <option label="Poloshirt">Poloshirt</option>
+            </optgroup>
+            <optgroup label="Underwear">
+              <option label="Socks">Socks</option>
+              <option label="Underwear">Underwear</option>
+            </optgroup>
+          </select>
+        </label>
+        <br />
 
-      <button class="filter">filter</button>
-    </div>
+        <button class="filter">filter</button>
+      </div>
     <div class="container">
       
       <div class="scrollable">
@@ -143,6 +143,7 @@
       </div>
     </div>
   </body>
+  <script src="src/UserInterface/UIMethodCollection.js"></script>
   <script src="src/Services/RandomImageQuery.js"></script>
     <script src="src/Services/RandomItemGenerator.js"></script>
     <script src="src/Model/Item.js"></script>

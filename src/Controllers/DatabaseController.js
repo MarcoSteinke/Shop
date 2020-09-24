@@ -12,7 +12,7 @@ class DatabaseController {
     }
 
     loadApplication() {
-        this.mockDatabase(10);
+        this.mockDatabase(30);
         console.log("DatabaseController.js loaded");
     }
 
